@@ -1,63 +1,112 @@
-# BCT-APOSTA-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BCT Aposta</title>
+    <title>BetMaster - Seu site de apostas</title>
     <style>
+        /* CSS */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
             color: #333;
         }
+
         header {
-            background-color: #007BFF;
+            background-color: #1e90ff;
             color: white;
-            text-align: center;
-            padding: 20px 0;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        main {
-            padding: 20px;
-            text-align: center;
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 10px;
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav ul li a {
+            color: white;
             text-decoration: none;
-            color: white;
-            background-color: #007BFF;
-            border-radius: 5px;
+            font-weight: bold;
         }
-        .button:hover {
-            background-color: #0056b3;
+
+        .banner img {
+            width: 100%;
+            height: auto;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
+
+        section {
+            padding: 2rem;
+        }
+
+        section#bets img {
+            width: 100%;
+            height: auto;
             margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1e90ff;
+            color: white;
+            padding: 1rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <h1>BCT Aposta</h1>
-        <p>O lugar certo para apostar nos seus esportes favoritos!</p>
+        <div class="logo">BetMaster</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#bets">Apostas</a></li>
+                <li><a href="#promotions">Promoções</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h2>Bem-vindo à BCT Aposta</h2>
-        <p>Escolha seu esporte, faça suas apostas e acompanhe os resultados em tempo real.</p>
-        <a href="#" class="button">Registrar-se</a>
-        <a href="#" class="button">Fazer Login</a>
-        <a href="#" class="button">Explorar Esportes</a>
-    </main>
-    <footer>
-        <p>&copy; 2025 BCT Aposta. Todos os direitos reservados.</p>
+
+    <!-- Banner principal -->
+    <section id="home" class="banner">
+        <img src="/mnt/data/A_promotional_banner_for_a_betting_website_designe.png" 
+             alt="Promoção: Ganhe até R$500 no Primeiro Depósito!">
+    </section>
+
+    <!-- Seção de apostas -->
+    <section id="bets">
+        <h2>Apostas Disponíveis</h2>
+        <ul>
+            <li>Futebol - Jogos ao vivo</li>
+            <li>Basquete - Próximos eventos</li>
+            <li>E-sports - Competição global</li>
+        </ul>
+        <img src="/mnt/data/A_promotional_banner_for_a_betting_website_designe.png" 
+             alt="Aposte Agora e Multiplique Seus Ganhos!">
+    </section>
+
+    <!-- Seção de promoções -->
+    <section id="promotions">
+        <h2>Promoções</h2>
+        <p>Aproveite o bônus de 100% no seu primeiro depósito!</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contact">
+        <p>© 2025 BetMaster. Todos os direitos reservados.</p>
+        <p>Entre em contato: suporte@betmaster.com</p>
     </footer>
 </body>
 </html>
